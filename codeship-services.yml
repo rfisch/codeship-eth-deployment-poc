@@ -2,9 +2,3 @@ app:
   build:
     image: smartcontract
     dockerfile: app-docker-config
-  depends_on:
-    - ganache
-
-ganache:
-  build:
-    dockerfile: ganache-docker-config

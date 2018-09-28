@@ -1,5 +1,10 @@
-- name: unit-test-run
-  service: app
-  command: truffle test
+- type: parallel
+  steps:
+  - name: unit-test-run
+    service: app
+    command: truffle test
+  - name: unit-test-run-2
+    service: app
+    command: truffle test
 
 
