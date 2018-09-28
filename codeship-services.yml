@@ -1,9 +1,10 @@
 app:
   build:
     image: smartcontract
-    dockerfile: test-image
+    dockerfile: app-docker-config
   depends_on:
-      - nodejs
+    - ganache
 
-nodejs:
-    image: node:8
+ganache:
+  build:
+    dockerfile: ganache-docker-config
