@@ -1,0 +1,17 @@
+# base on latest ruby base image
+FROM node:8
+
+# install dependencies
+RUN apt-get update && apt-get install -y npm
+
+# declare /app as working directory of image
+WORKDIR /app
+
+# copy over package.json and package.json.lock to image's working directory, then run `npm install`
+ COPY package.json ./
+RUN npm install 
+
+RUN npm install -g truffle
+
+# copy all remaining files/folders in project directory to the container
+COPY . /app

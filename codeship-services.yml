@@ -1,0 +1,9 @@
+app:
+  build:
+    image: smartcontract
+    dockerfile: test-image
+  depends_on:
+      - nodejs
+
+nodejs:
+    image: node:8

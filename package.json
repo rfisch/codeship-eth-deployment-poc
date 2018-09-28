@@ -1,0 +1,25 @@
+{
+  "name": "codeship-poc",
+  "version": "1.0.0",
+  "description": "Proof of Concept to create a full code + environment deployment automation for a single node Ethereum Smart Contract Deployment with Codeship CI/CD",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rfisch/codeship-eth-deployment-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rfisch/codeship-eth-deployment-poc/issues"
+  },
+  "homepage": "https://github.com/rfisch/codeship-eth-deployment-poc#readme",
+  "dependencies": {
+    "ganache-cli": "^6.1.8"
+  }
+}
