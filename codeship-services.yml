@@ -1,4 +1,11 @@
 app:
   build:
+    image: primaryapp
+    dockerfile: app.dockerfile
+  depends_on:
+    - ganache
+
+ganache:
+  build:
     image: smartcontract
-    dockerfile: app-docker-config
+    dockerfile: ganache-cli.dockerfile

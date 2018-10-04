@@ -5,10 +5,9 @@ RUN apt-get update && apt-get install -y npm
 WORKDIR /app
 
 COPY package.json ./
-RUN npm install 
+RUN npm install
 RUN npm install -g truffle ganache-cli
 
 
 # copy all remaining files/folders in project directory to the container
 COPY . /app
-
